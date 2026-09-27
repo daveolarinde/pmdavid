@@ -32,7 +32,7 @@ const JOURNEY = [
       {
         title: "Applying it on live work",
         detail:
-          "Running standups, maintaining sprint boards in Jira, and coordinating team communication through Slack on real agency projects.",
+          "Running standups, maintaining sprint boards in Jira, and coordinating team communication.",
       },
     ],
   },
@@ -54,7 +54,7 @@ const EXPERIENCE = [
     org: "Maximillian Labs",
     period: "Current",
     detail:
-      "Managing project timelines and team workflow at a digital agency. Coordinating sprints, maintaining the Jira backlog, and keeping the team aligned day to day over Slack, learning and applying agile practices on real client work.",
+      "Managing project timelines and team workflow at a digital agency. Coordinating sprints, maintaining the Jira backlog, and keeping the team aligned day to day , learning and applying agile practices on real  work.",
   },
   {
     role: "Intern, Project Administration and Development Unit",
