@@ -56,6 +56,18 @@ const EXPERIENCE = [
     detail:
       "Managing project timelines and team workflow at a digital agency. Coordinating sprints, maintaining the Jira backlog, and keeping the team aligned day to day over Slack, learning and applying agile practices on real client work.",
   },
+  {
+    role: "Intern, Project Administration and Development Unit",
+    org: "IITA (International Institute of Tropical Agriculture)",
+    period: "6 months",
+    detail:
+      "Completed a 6 month internship with the Project Administration and Development Unit at IITA, Ibadan. Supported coordination of project documentation and administration, gaining a foundational, hands on introduction to project management that shaped my growth toward becoming a PM.",
+    image: {
+      src: "https://iita.org/wp-content/uploads/2026/06/1024_DSC0318z-300x212.jpg",
+      alt: "Entrance to the IITA headquarters in Ibadan, Nigeria",
+      credit: "Photo: IITA",
+    },
+  },
 ];
 
 const fadeUp = {
@@ -197,12 +209,22 @@ export default function Portfolio() {
               key={job.role + job.org}
               variants={fadeUp}
               whileHover={{ y: -3 }}
-              className="p-6 sm:p-8 bg-[#12172B] text-[#F7F5F0] flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-8"
+              className="mb-4 p-6 sm:p-8 bg-[#12172B] text-[#F7F5F0] flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-8"
             >
               <div className="sm:w-1/3">
                 <h3 className="font-display font-semibold text-lg">{job.role}</h3>
                 <p className="text-[#E8963C] text-sm mt-1">{job.org}</p>
                 <p className="text-[#F7F5F0]/50 text-xs mt-1">{job.period}</p>
+                {job.image && (
+                  <div className="mt-4">
+                    <img
+                      src={job.image.src}
+                      alt={job.image.alt}
+                      className="w-full max-w-[220px] rounded-sm border border-[#F7F5F0]/10"
+                    />
+                    <p className="text-[10px] text-[#F7F5F0]/40 mt-1">{job.image.credit}</p>
+                  </div>
+                )}
               </div>
               <p className="text-[#F7F5F0]/75 leading-relaxed sm:w-2/3">{job.detail}</p>
             </motion.div>
@@ -321,26 +343,26 @@ export default function Portfolio() {
             <motion.a
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.98 }}
-              href="mailto:olarindedavid49@gmail.com"
+              href="mailto:david.olarinde@example.com"
               className="px-5 py-3 bg-[#E8963C] text-[#12172B] font-medium hover:bg-[#E8963C]/90 transition-colors"
             >
               Email me
             </motion.a>
-            {/* <motion.a
+            <motion.a
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.98 }}
               href="#"
               className="px-5 py-3 border border-[#F7F5F0]/30 hover:border-[#F7F5F0]/60 transition-colors"
             >
               LinkedIn
-            </motion.a> */}
+            </motion.a>
           </div>
         </motion.div>
       </section>
 
       <footer className="max-w-4xl mx-auto px-6 py-8 text-sm text-[#5B6270] flex justify-between">
         <span>David Olarinde</span>
-        <span>Agile PM </span>
+        <span>Agile PM in progress</span>
       </footer>
       </div>
     </>
