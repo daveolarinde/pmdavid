@@ -61,7 +61,7 @@ const EXPERIENCE = [
     org: "IITA (International Institute of Tropical Agriculture)",
     period: "6 months",
     detail:
-      "Completed a 6 month internship with the Project Administration and Development Unit at IITA, Ibadan. Supported coordination of project documentation and administration, gaining a foundational, hands on introduction to project management that shaped my growth toward becoming a PM.",
+      "Completed a 6 month internship with the Project Administration and Development Unit at IITA, Ibadan. Gaining a foundational, hands on introduction to project management that shaped my growth toward becoming a PM.",
     image: {
       src: "https://iita.org/wp-content/uploads/2026/06/1024_DSC0318z-300x212.jpg",
       alt: "Entrance to the IITA headquarters in Ibadan, Nigeria",
